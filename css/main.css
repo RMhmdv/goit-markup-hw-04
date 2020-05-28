@@ -127,12 +127,26 @@ img {
     margin-right: 30px;
 }
 
-.contact-links .mail >img {
+.mail::before  {
     display: inline-block;
+    content: "";
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    background-image: url(../images/letter.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
-.contact-links .tel >img {
+.tel::before {
     display: inline-block;
+    content: "";
+    width: 10px;
+    height: 15px;
+    margin-right: 10px;
+    background-image: url(../images/phone.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .contact-links .mail,
@@ -159,9 +173,9 @@ img {
 }
 
 .hero-title {
-    width: 646px;
+    width: 650px;
     margin-top: 0;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
    
@@ -207,7 +221,7 @@ img {
 
 .button {
     
-    display: inline-block;
+    display: inline-flex;
     min-width: 200px;
     height: 50px;
     padding: 10px 32px;
@@ -341,26 +355,31 @@ img {
     display: flex;
 }
 
-/* .team-list.item {
+.card {
     width: 270px;
-    height: 422px;
     box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
-} */
+    padding-bottom: 0;
+}
+.card-team {
+    background-color: var(--white-color);
+    padding-top: 30px;
+    padding-bottom: 24px;
+    margin-bottom: 0;
+}
 
 .social {
     display: flex;
-    width: 207px;
+    max-width: 206px;
     /* height: 44px; */
     /* padding-top: 12px;
     padding-bottom: 12px; */
-    /* justify-content: center; */
+    justify-content: center;
     margin-left: auto;
-    margin-right: auto;
-}
+    margin-right: auto; 
+    margin: 0;
+    padding: 0;
 
-.team-list >li >img {
-    margin-bottom: 30px;
 }
 
 
@@ -395,9 +414,9 @@ img {
 .team-list .item:not(:last-child) {
     margin-right: 30px;
 }
-.social .item:not(:last-child) {
+/* .social .item:not(:last-child) {
     margin-right: 30px;
-}
+} */
 
 /* Clients */
 .clients-list {
