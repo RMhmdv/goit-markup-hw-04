@@ -518,6 +518,16 @@ img {
 .mailing {
     margin-left: 102px;
 }
+.mailing .button::after  {
+    display: inline-flex;
+    content: "";
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    background-image: url(../images/send.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
 
 .container.copy {
     padding-top: 18px;
