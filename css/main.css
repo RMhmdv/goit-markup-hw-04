@@ -117,48 +117,40 @@ img {
     color: var(--accent-color);
 }
 
-.contact-links {
+.contact-info {
     display: flex;
     margin-left: auto;
     align-items: baseline;
 }
 
-.contact-links .item:not(:last-child) {
+.contact-info .contact-info__item:not(:last-child) {
     margin-right: 30px;
 }
 
-.mail::before  {
+.icon-letter  {
     display: inline-block;
-    content: "";
     width: 16px;
     height: 12px;
     margin-right: 10px;
-    background-image: url(../images/letter.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
+    fill: currentColor;
 }
 
-.tel::before {
+.icon-phone {
     display: inline-block;
-    content: "";
     width: 10px;
     height: 15px;
     margin-right: 10px;
-    background-image: url(../images/phone.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
+    fill: currentColor;
+
 }
 
-.contact-links .mail,
-.contact-links .tel {
+.contact-info__link {
     color: var(--primary-text-color);
 }
-.contact-links .mail:hover,
-.contact-links .mail:focus,
-.contact-links .mail:active, 
-.contact-links .tel:hover,
-.contact-links .tel:focus,
-.contact-links .tel:active {
+
+.contact-info__link:hover,
+.contact-info__link:focus,
+.contact-info__link:active  {
     color: var(--accent-color);
 }
 
@@ -289,7 +281,7 @@ img {
     
 }
 .box {
-    display: block;
+    display: flex;
     width: 270px;
     height: 120px;
     align-items: center;
@@ -305,8 +297,11 @@ img {
 }
 .box-icon {
     display: block;
+    width: 67px;
+    height: 70px;
     margin-right: auto;
     margin-left: auto;
+    fill: currentColor;
 }
 
 .feature-list p {
