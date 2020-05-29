@@ -59,11 +59,6 @@ img {
 
 /* Header */
 
-.page-header {
-    /* background-color: rgb(213, 230, 230); */
-    /* display: flex; */
-}
-
 .container.main-container {
     display: flex;
     align-items: center;
@@ -297,7 +292,7 @@ img {
 }
 .box-icon {
     display: block;
-    width: 67px;
+    width: 70px;
     height: 70px;
     margin-right: auto;
     margin-left: auto;
@@ -365,19 +360,28 @@ img {
 
 .social {
     display: flex;
-    max-width: 206px;
-    /* height: 44px; */
-    /* padding-top: 12px;
-    padding-bottom: 12px; */
     justify-content: center;
-    margin-left: auto;
-    margin-right: auto; 
     margin: 0;
     padding: 0;
-
 }
 
+.social-link {
+    display: flex;
+}
 
+.social-icon {
+    display: block;
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+}
+.social-icon:hover {
+    color: var(--accent-color);
+}
+
+.social-item:not(:last-child) {
+    margin-right: 30px;
+}
 .team-title {
 
     margin-top: 0;
@@ -423,8 +427,6 @@ img {
     width: 170px;
     height: 90px;
     padding-top: 20px;
-    /* align-items: center; */
-    /* margin-bottom: 30px; */
 
     border: 1px solid var(--border-color);
     border-radius: 4px;
@@ -433,6 +435,7 @@ img {
     border-color: var(--accent-color);
     color: var(--accent-color);
 }
+
 .client-logo {
     display: block;
     margin-right: auto;
@@ -513,15 +516,18 @@ img {
 .mailing {
     margin-left: 102px;
 }
-.mailing .button::after  {
+
+.button.submit {
     display: inline-flex;
-    content: "";
+    font-weight: 900;
+    letter-spacing: 0.06em;
+}
+.submit-icon {
+    display: block;
     width: 24px;
     height: 24px;
     margin-left: 10px;
-    background-image: url(../images/send.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
+    fill: currentColor;
 }
 
 .container.copy {
